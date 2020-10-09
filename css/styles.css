@@ -4569,6 +4569,107 @@ input[type=button].btn-block {
   opacity: 1;
   transition: all 0.3s ease;
 }
+
+/* source: https://codepen.io/Gelsot/pen/xpGYyd?editors=1100 Portfolio effects -start */
+.portfolio-wrapper {
+  display: flex;
+	width: 90%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+.portfolio-card {
+  width: 280px;
+	height: 360px;
+	border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+	background: white;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+  transition: 0.4s ease-out;
+	box-shadow: 0px 7px 10px rgba(0,0,0, 0.5);
+}
+
+.portfolio-card:hover {
+	transform: translateY(20px);
+}
+
+.portfolio-card:hover:before {
+	opacity: 1;
+}
+
+.portfolio-card:hover .portfolio-info {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.portfolio-card:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 2;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.portfolio-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+}
+
+.portfolio-card .portfolio-info {
+	position: relative;
+	z-index: 3;
+	color: white;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: 0.5s;
+}
+
+.portfolio-card .portfolio-info h1 {
+	margin: 0px;
+}
+
+.portfolio-card .portfolio-info p {
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: 8px;
+}
+
+.portfolio-card .portfolio-info button {
+	padding: 0.6rem;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	background: white;
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+
+.portfolio-card .portfolio-info button:hover {
+	background: dodgerblue;
+	color: white;
+}
+
+
+/* source: https://codepen.io/Gelsot/pen/xpGYyd?editors=1100 Portfolio effects -end */
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
@@ -7553,6 +7654,9 @@ button.bg-dark:focus {
   width: 100% !important;
 }
 
+.container-w-100 {
+  width: 100%;
+}
 .w-auto {
   width: auto !important;
 }
