@@ -484,7 +484,8 @@ mark,
 
 .page-header,
 .page-footer,
-.page-main .text-wrapper {
+.page-main .text-wrapper,
+.page-main .p-wrapper {
     overflow: hidden;
 }
 
@@ -524,9 +525,10 @@ mark,
     transform: translateY(-120%);
 }
 
-.loaded .page-header::after {
+
+/* .loaded .page-header::after {
     animation: scaleIn 1.3s ease-in 0.2s forwards;
-}
+} */
 
 .loaded .page-main {
     animation: fadeIn 1s ease-in 0.7s forwards;
