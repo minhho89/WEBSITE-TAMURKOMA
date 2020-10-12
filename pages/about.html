@@ -7,8 +7,32 @@
     <meta name="description" content="" />
     <meta name="author" content="Minh Ho" />
     <title>About | Tamurakoma Vietnam</title>
+    <!-- loader -->
+    <style>
+        .no-js #loader {
+            display: none;
+        }
+        
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("assets/img/tamurakoma/tamurakoma-logo-medium.png") center no-repeat #fff;
+            /* url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif)  */
+        }
+    </style>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="img/tamurakoma-logo.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/tamurakoma/billiken.JPG" style="width:50px;height:20px" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -18,6 +42,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <!-- AOS: animation library -->
+    <link href="../css/aos.css" rel="stylesheet" href="">
 </head>
 
 <body id="page-top">
@@ -73,11 +99,11 @@
     <section class="page-section pb-1 mb-2" id="welcome">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12" data-aos="fade-right">
                     <img class="img-fluid" src="../assets/img/tamurakoma/group-photos.jpg" alt="group photo" />
                 </div>
 
-                <div class="col-lg-6 col-sm-12 text-center">
+                <div class="col-lg-6 col-sm-12 text-center" data-aos="fade-left">
                     <h3 class="section-subheading text-muted">Welcome to TAMURAKOMA VIETNAM</h3>
                     <p class="text-left">Present in Vietnam since 2007 as a representative office, Tamurakoma Vietnam started to promote garment business between Vietnam and Japan. After nearly 10 years of accumulating experience and relationships in Vietnam, Tamurakoma Vietnam
                         Co., Ltd. was born. With our business outside Japan market, we also expanded our business portfolio from simply garment to materials of fabrics, bags, medical protective goods. </p>
@@ -89,12 +115,12 @@
     <section class="page-section pb-1 mb-2" id="our_business">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-sm-12 text-center">
+                <div class="col-lg-6 col-sm-12 text-center" data-aos="fade-right">
                     <h3 class="section-subheading text-muted">Our Business</h3>
                     <p class="text-right">Tamurakoma Vietnam is a trading company specializing in garment-related products such as ready-made clothes, fabrics, and accessories. Currently, we trade in other products such as bags, medical protective equipment. The main markets
                         are East Asia (80%), Europe (10%), North America (8%), and domestic (2%).</p>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12" data-aos="fade-left">
                     <img class="img-fluid" src="../assets/img/portfolio/fabric.jpg" alt="" />
                 </div>
             </div>
@@ -104,42 +130,42 @@
     <section class="page-section pb-1 mb-2" id="history">
         <div class="container">
             <div class="text-center">
-                <h3 class="section-subheading text-muted">History of TAMURAKOMA & CO., Ltd.</h3>
+                <h3 class="section-subheading text-muted" data-aos="fade-up">History of TAMURAKOMA & CO., Ltd.</h3>
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/01.png" alt="" /></div>
-                    <div class="timeline-panel">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/01.png" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>1894-1898</h4>
                             <h4 class="subheading">Our Humble Beginnings</h4>
                         </div>
-                        <div class="timeline-body">
+                        <div data-aos="fade-up" class="timeline-body">
                             <p class="text-muted">The first Tamura Komajiro founded "Kouda-ya Tamura Shoten" in 1894. We were particular about the products that are unique to Tamurakoma, and launched products one after another. Western goods such as muslin dominated the industry.
                                 In 1898, a "design room" was set up to strengthen design and planning capabilities. It made a name for itself as "Design of Tamurakoma".</p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/02.png" alt="" /></div>
-                    <div class="timeline-panel">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/02.png" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>1918-1931</h4>
                             <h4 class="subheading">The expansion to global market</h4>
                         </div>
-                        <div class="timeline-body">
+                        <div data-aos="fade-up" class="timeline-body">
                             <p class="text-muted">Established TAMURAKOMA Shoten Co., Ltd. in 1918. During the financial crisis of the 1920s, as the domestic market cooled, it sought overseas sales channels.<br> Sales channels are pioneered in Indonesia, Thailand and Singapore.</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/03.png" alt="" /></div>
-                    <div class="timeline-panel">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/03.png" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>1985</h4>
                             <h4 class="subheading">Focus shift to commercialization and overseas production</h4>
                         </div>
-                        <div class="timeline-body">
+                        <div data-aos="fade-up" class="timeline-body">
                             <p class="text-muted">From the bubble economy to the Heisei recession. Tamurakoma faces a major turning point in the turbulent and difficult-to-read era. One was the strategic strengthening of secondary products, therefore we tried to break away
                                 from the fabric business. On the other hand, production is shifting overseas.<br> Starting with the opening of an office in Shanghai in 1985, Beijing, Seoul and Taipei (1986), Tamurakoma (Hong Kong) Co., Ltd. was established
                                 in 1994, and Tamurakoma (Shanghai) Textiles Co., Ltd. was established in 2001. </p>
@@ -147,9 +173,9 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/04.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/04.jpg" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
+                        <div data-aos="fade-up" class="timeline-heading">
                             <h4>2007</h4>
                             <h4 class="subheading">Opening of TAMURAKOMA HOCHIMINH REPRESENTATIVE OFFICE</h4>
                         </div>
@@ -159,8 +185,8 @@
                     </div>
                 </li>
                 <li class="timeline-panel">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/05.jpg" alt="" /></div>
-                    <div class="timeline-panel">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/05.jpg" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>2016</h4>
                             <h4 class="subheading">TAMURAKOMA VIETNAM Co.,Ltd is established</h4>
@@ -171,8 +197,8 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/07.jpg" alt="" /></div>
-                    <div class="timeline-panel">
+                    <div data-aos="fade-up" class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/history/07.jpg" alt="" /></div>
+                    <div data-aos="fade-up" class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>2020</h4>
                             <h4 class="subheading">TAMURAKOMA VIETNAM EXPANDS GLOBALLY BUSINESS</h4>
@@ -183,7 +209,7 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image">
+                    <div data-aos="fade-up" class="timeline-image">
                         <h4>
                             Be Part
                             <br /> Of Our
@@ -272,6 +298,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
+    <!-- AOS: animation library -->
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
