@@ -55,7 +55,8 @@
             $(".se-pre-con").fadeOut("slow");;
         });
     </script>
-
+    <!-- AOS: animation library -->
+    <link href="../css/aos.css" rel="stylesheet" href="">
 </head>
 
 <body id="page-top">
@@ -122,10 +123,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Woven trust makes future</h2>
-                        <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">Working with us is all you need to get your orders done with high productivity as well as quality!</p>
-                        <a class="btn btn-light btn-xl js-scroll-trigger" target="_blank" href="https://tamurakomavietnam.trustpass.alibaba.com/">Visit our online store!</a>
+                        <h2 data-aos="fade-up" class="text-white mt-0">Woven trust makes future</h2>
+                        <hr data-aos="fade-up" class="divider light my-4" />
+                        <p data-aos="fade-up" class="text-white-50 mb-4">Working with us is all you need to get your orders done with high productivity as well as quality!</p>
+                        <a data-aos="fade-up" class="btn btn-light btn-xl js-scroll-trigger" target="_blank" href="https://tamurakomavietnam.trustpass.alibaba.com/">Visit our online store!</a>
                     </div>
                 </div>
             </div>
@@ -133,23 +134,23 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
-                <h2 class="text-center mt-0">At Your Service</h2>
-                <hr class="divider my-4" />
+                <h2 data-aos="fade-up-left" class="text-center mt-0">At Your Service</h2>
+                <hr data-aos="fade-up-right" class="divider my-4" />
                 <div class="row justify-content-around">
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <div class="icon"><i class="fas fa-4x fa-fighter-jet material-icons md-36"></i></div>
                         <p class="title">Rapidly Change</p>
                         <p class="text">We are involving the movements of market and taking adapt quickly.</p>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <div class="icon"><i class="fas fa-4x fa-tshirt material-icons md-36"></i></div>
                         <p class="title">Quality Commitment</p>
                         <p class="text">With over ten years in the industry with our own QC team.</p>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <div class="icon"><i class="fas fa-4x fa-user-tie material-icons md-36"></i></div>
                         <p class="title">Professional</p>
                         <p class="text">Working with Japanese style.</p>
@@ -161,32 +162,32 @@
         <!-- Portfolio-->
         <section class="page-section" id="portfolio">
             <div class="container-w-100">
-                <h2 class="text-center">Our products</h2>
-                <hr class="divider my-4" />
+                <h2 data-aos="fade-up-left" class="text-center">Our products</h2>
+                <hr data-aos="fade-up-right" class="divider my-4" />
                 <div class="row justify-content-center">
                     <div class="portfolio-wrapper">
-                        <div class="portfolio-card"><img src="assets/img/portfolio/fabric.jpg" />
+                        <div data-aos="flip-left" class="portfolio-card"><img src="assets/img/portfolio/fabric.jpg" />
                             <div class="portfolio-info">
                                 <h1>Materials</h1>
                                 <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
                                 <button>Read More</button>
                             </div>
                         </div>
-                        <div class="portfolio-card"><img src="assets/img/portfolio/apparel.jpg" />
+                        <div data-aos="flip-left" class="portfolio-card"><img src="assets/img/portfolio/apparel.jpg" />
                             <div class="portfolio-info">
                                 <h1>Apparels</h1>
                                 <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
                                 <button>Read More</button>
                             </div>
                         </div>
-                        <div class="portfolio-card"><img src="assets/img/portfolio/accessories.jpg" />
+                        <div data-aos="flip-left" class="portfolio-card"><img src="assets/img/portfolio/accessories.jpg" />
                             <div class="portfolio-info">
                                 <h1>Equipments</h1>
                                 <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
                                 <button>Read More</button>
                             </div>
                         </div>
-                        <div class="portfolio-card"><img src="assets/img/portfolio/eco-friendly2.jpg" />
+                        <div data-aos="flip-left" class="portfolio-card"><img src="assets/img/portfolio/eco-friendly2.jpg" />
                             <div class="portfolio-info">
                                 <h1>Eco-friendly Products</h1>
                                 <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
@@ -281,8 +282,11 @@
                 document.querySelector("body").classList.add("loaded");
             });
         </script>
-        <!-- Loader -->
-
+        <!-- Aos -->
+        <script src="../js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </div>
     <div class="se-pre-con"></div>
 </body>

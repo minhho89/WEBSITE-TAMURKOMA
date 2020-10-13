@@ -10593,10 +10593,10 @@ header.masthead {
     /* background: url(../assets/video/hero_video.mp4); */
     /* background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 10%, 
   rgba(158, 157, 205, 0.596) 100%), url("../assets/img/tamurakoma/hero_logo.jpg"); */
-    background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 30%, rgba(158, 157, 205, 0.8) 100%), url("../assets/img/tamurakoma/hero_logo.jpg");
+    background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 30%, rgba(158, 157, 205, 0.8) 100%), url("../assets/img/tamurakoma/ho-chi-minh-city.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: cover;
 }
 
