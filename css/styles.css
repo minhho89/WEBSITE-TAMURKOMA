@@ -58,6 +58,11 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@font-face {
+    font-family: 'HerrVonMullerhoff';
+    src: url(../assets/fonts/HerrVonMuellerhoff-Regular.ttf);
+}
+
 article,
 aside,
 figcaption,
@@ -4864,7 +4869,7 @@ input[type=button].btn-block {
     width: 100%;
     max-width: 300px;
     min-width: 200px;
-    height: 250px;
+    height: 300px;
     background-color: #292929;
     margin: 10px;
     border-radius: 10px;
@@ -5076,7 +5081,7 @@ input[type=button].btn-block {
 /* source: https://codepen.io/rafaelavlucas/pen/rQWJYG */
 
 .card:hover {
-    height: 270px;
+    height: 350px;
     background-color: #142280;
     box-shadow: 40px 40px 20px rgba(20, 34, 128, 0.24);
 }
@@ -5144,7 +5149,7 @@ input[type=button].btn-block {
 }
 
 .portfolio-card:hover {
-    transform: translateY(20px);
+    transform: translateY(20px) !important;
 }
 
 .portfolio-card:hover:before {
@@ -10172,6 +10177,9 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
+    header.masthead {
+        background-attachment: fixed;
+    }
     .text-sm-left {
         text-align: left !important;
     }
@@ -10595,9 +10603,9 @@ header.masthead {
   rgba(158, 157, 205, 0.596) 100%), url("../assets/img/tamurakoma/hero_logo.jpg"); */
     background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 30%, rgba(158, 157, 205, 0.8) 100%), url("../assets/img/tamurakoma/ho-chi-minh-city.jpg");
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: co;
 }
 
 header.masthead.masthead-about {
@@ -10614,6 +10622,10 @@ header.masthead.masthead-about {
 
 header.masthead h1 {
     font-size: 2.25rem;
+}
+
+header.masthead.masthead-about h1 {
+    font-family: 'HerrVonMullerhoff';
 }
 
 @media (min-width: 992px) {
@@ -10835,6 +10847,9 @@ header.masthead h1 {
 }
 
 @media (min-width: 768px) {
+    header.masthead {
+        background-attachment: cover;
+    }
     .timeline:before {
         left: 50%;
     }
@@ -10867,6 +10882,9 @@ header.masthead h1 {
 }
 
 @media (min-width: 992px) {
+    header.masthead {
+        background-attachment: fixed;
+    }
     .timeline>li {
         min-height: 150px;
     }
