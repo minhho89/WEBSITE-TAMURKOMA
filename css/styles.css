@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(../assets/fonts/Lato-Regular.ttf);
+@import url(../assets/fonts/MeieScript-Regular.ttf);
 
 /*!
 * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
@@ -52,7 +54,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Lato';
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -78,7 +80,7 @@ section {
 
 body {
     margin: 0;
-    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -10513,7 +10515,7 @@ hr.light {
 
 #mainNav .navbar-nav .nav-item .nav-link {
     color: #6c757d;
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     font-size: 0.9rem;
     padding: 0.75rem 0;
@@ -10602,10 +10604,10 @@ header.masthead {
     /* background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 10%, 
   rgba(158, 157, 205, 0.596) 100%), url("../assets/img/tamurakoma/hero_logo.jpg"); */
     background: linear-gradient(to bottom, rgba(100, 100, 105, 0.719) 30%, rgba(158, 157, 205, 0.8) 100%), url("../assets/img/tamurakoma/ho-chi-minh-city.jpg");
-    background-position: center;
+    background-position: center bottom;
     background-attachment: cover;
     background-repeat: no-repeat;
-    background-size: co;
+    background-size: cover;
 }
 
 header.masthead.masthead-about {
@@ -10620,12 +10622,31 @@ header.masthead.masthead-about {
     background-size: cover;
 }
 
-header.masthead h1 {
-    font-size: 2.25rem;
+header.masthead.masthead-product {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: right;
+    color: #fff;
+    background: url("../assets/img/Hero/wall-mockup.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: cover;
 }
 
-header.masthead.masthead-about h1 {
+header.masthead h1 {
+    font-size: 2.25rem;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+header.masthead.masthead-about h1,
+header.masthead.masthead-product h1,
+header.masthead.masthead-product h2 {
     font-family: 'HerrVonMullerhoff';
+}
+
+header.masthead.masthead-product p {
+    font-family: 'Meie Script', cursive;
 }
 
 @media (min-width: 992px) {

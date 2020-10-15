@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+        .diagonal-box {
+        background-image: linear-gradient(45deg, #6303B1, #ff0099);
+        height: 300px;
+        transform: skewY(-11deg);
+        position: relative;
+    }
+    
+    .content {
+        max-width: 50em;
+        margin: 0 auto;
+        transform: skewY(11deg);
+        position: relative;
+    }
+    
+    .diagonal-box:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+        transform: skewY(-11deg);
+    }
+    
+     :root {
+        --magic-number: 0.09719;
+        /* tan(11°)/2 */
+        --content-width: 100vw;
+        --skew-padding: calc(var(--content-width) * var(--magic-number));
+    }
+    
+    @media screen and (min-width: 42em) {
+        :root {
+            --content-width: 42em;
+        }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="diagonal-box">
+        <div class="content">
+            <h1>TEST JDFSFJjdhfsdfsdf</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus et expedita quod, inventore incidunt ducimus, debitis dolorum laudantium, mollitia odit explicabo hic. Esse tenetur ea mollitia distinctio nesciunt animi excepturi.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
