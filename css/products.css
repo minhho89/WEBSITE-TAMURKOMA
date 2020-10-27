@@ -11,7 +11,10 @@
     background-size: cover;
 }
 
-#textiles h1 {
+#textiles h1,
+#apparels h1,
+#medical h1,
+#ecofriendly h1 {
     font-family: 'HerrVonMullerhoff';
 }
 
@@ -26,6 +29,28 @@
     padding-bottom: 6rem;
     color: #fff;
     background: url(../assets/img/Hero/garment-hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#medical {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/Hero/gloves.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#ecofriendly {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/Hero/eco.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: right bottom;

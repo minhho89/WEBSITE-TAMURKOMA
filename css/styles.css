@@ -10569,6 +10569,10 @@ hr.light {
     #mainNav .navbar-brand:hover {
         color: #fff;
     }
+    #mainNav-contacts .navbar-nav .nav-item .nav-link {
+        color: blue;
+        padding: 0 1rem;
+    }
     #mainNav .navbar-nav .nav-item .nav-link {
         color: rgba(255, 255, 255, 0.7);
         padding: 0 1rem;
@@ -10628,6 +10632,18 @@ header.masthead.masthead-product {
     text-align: right;
     color: #fff;
     background: url("../assets/img/Hero/wall-mockup.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: cover;
+}
+
+header.masthead.masthead-contacts {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: right;
+    color: #fff;
+    background: url("../assets/img/tamurakoma/hero_logo.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: left;
