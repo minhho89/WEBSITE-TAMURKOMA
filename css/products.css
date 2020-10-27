@@ -1,0 +1,58 @@
+@import url(../assets/fonts/Lato-Regular.ttf);
+@import url(../assets/fonts/MeieScript-Regular.ttf);
+#textiles {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/fabric/fabric-hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#textiles h1,
+#apparels h1,
+#medical h1,
+#ecofriendly h1 {
+    font-family: 'HerrVonMullerhoff';
+}
+
+#textiles h2,
+#textiles h3,
+#textiles h4 {
+    color: black;
+}
+
+#apparels {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/Hero/garment-hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#medical {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/Hero/gloves.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#ecofriendly {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    background: url(../assets/img/Hero/eco.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: cover;
+}
