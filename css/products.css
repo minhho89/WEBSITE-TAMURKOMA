@@ -11,6 +11,10 @@
     background-size: cover;
 }
 
+p {
+    text-align: justify;
+}
+
 #textiles h1,
 #apparels h1,
 #medical h1,
